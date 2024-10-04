@@ -7,9 +7,9 @@ using UT_02_Ejercicio_01.Models;
 
 namespace UT_02_Ejercicio_01.Data
 {
-    public class UT_02_Ejercicio_01Context : DbContext
+    public class RentalCar : DbContext
     {
-        public UT_02_Ejercicio_01Context (DbContextOptions<UT_02_Ejercicio_01Context> options)
+        public RentalCar (DbContextOptions<RentalCar> options)
             : base(options)
         {
         }

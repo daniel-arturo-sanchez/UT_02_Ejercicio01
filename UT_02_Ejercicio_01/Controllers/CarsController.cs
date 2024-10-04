@@ -12,9 +12,9 @@ namespace UT_02_Ejercicio_01.Controllers
 {
     public class CarsController : Controller
     {
-        private readonly UT_02_Ejercicio_01Context _context;
+        private readonly RentalCar _context;
 
-        public CarsController(UT_02_Ejercicio_01Context context)
+        public CarsController(RentalCar context)
         {
             _context = context;
         }
