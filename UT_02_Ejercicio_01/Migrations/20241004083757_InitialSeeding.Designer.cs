@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UT_02_Ejercicio_01.Data;
 
@@ -11,9 +12,11 @@ using UT_02_Ejercicio_01.Data;
 namespace UT_02_Ejercicio_01.Migrations
 {
     [DbContext(typeof(RentalCar))]
-    partial class RentalCarModelSnapshot : ModelSnapshot
+    [Migration("20241004083757_InitialSeeding")]
+    partial class InitialSeeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
